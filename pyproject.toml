@@ -1,0 +1,38 @@
+[project]
+name = "labs-gunshot-classification"
+version = "0.1.0"
+description = "Deep learning gunshot classification using TensorFlow and MLflow"
+authors = [
+  { name = "Ittichai Boonyarakthunya", email = "i.boonyarakthunya@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+  "tensorflow>=2.16.1",
+  "librosa>=0.10.1",
+  "matplotlib>=3.8",
+  "numpy (<2)",
+  "soundfile",
+  "mlflow>=2.12",
+  "scikit-learn>=1.4",
+  "requests (>=2.32.4,<3.0.0)",
+  "tensorflow-macos (>=2.16.2,<3.0.0)",
+  "tqdm (>=4.67.1,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{ include = "labs_gunshot_classification", from = "src" }]
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29"
+jupyter = "^1.0"
+black = "^24.3"
+isort = "^5.13"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+mlflow-ui = "mlflow.cli:ui"

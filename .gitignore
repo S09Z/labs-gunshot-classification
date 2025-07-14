@@ -176,3 +176,4 @@ mlruns
 audio_data
 *.mp3
 *.npy
+*.keras

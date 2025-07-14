@@ -174,3 +174,5 @@ mlruns
 .venv
 .vscode
 audio_data
+*.mp3
+*.npy

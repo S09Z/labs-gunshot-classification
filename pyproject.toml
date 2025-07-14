@@ -18,7 +18,9 @@ dependencies = [
   "scikit-learn>=1.4",
   "requests (>=2.32.4,<3.0.0)",
   "tensorflow-macos (>=2.16.2,<3.0.0)",
-  "tqdm (>=4.67.1,<5.0.0)"
+  "tqdm (>=4.67.1,<5.0.0)",
+  "protobuf (==3.20.3)",
+  "seaborn (>=0.13.2,<0.14.0)"
 ]
 
 [tool.poetry]
